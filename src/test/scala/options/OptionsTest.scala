@@ -19,34 +19,29 @@ class OptionsTest extends FunSuite with Matchers{
     emptyValue should be (None)
   }
 
-  test("when true then function return text ?"){
+  test("does function maybeItWillReturnSomething return Found value when it should be called with true ?"){
     val value = maybeItWillReturnSomething(true)
     value getOrElse "No value" should be ("Found value")
   }
 
-  test("when false then function return None ?"){
+  test("does function getOrElse return No value when another function return None ?"){
     val value = maybeItWillReturnSomething(false)
     value getOrElse "No value" should be ("No value")
   }
 
-  test("getOrElse with brackets example"){
+  test("can I use function getOrElse with brackets ?"){
     val value = maybeItWillReturnSomething(false)
     value getOrElse {
       "default function"
     } should be("default function")
   }
 
-  test("when true value should not be empty ?"){
-    val value = maybeItWillReturnSomething(true)
-    value.isEmpty should be(false)
-  }
-
-  test("when false value should be empty ?"){
+  test("can I use function isEmpty to check value is None ?"){
     val value = maybeItWillReturnSomething(false)
     value.isEmpty should be(true)
   }
 
-  test("when Some value could be 20.0 then value also ?"){
+  test("can I use function Some to get value when it exists ?"){
     val someValue: Option[Double] = Some(20.0)
     val value = someValue match {
       case Some(v) => v
@@ -55,36 +50,21 @@ class OptionsTest extends FunSuite with Matchers{
     value should be (20.0)
   }
 
-  test("when Some value could be None then value equals 0.0 ?"){
-    val noValue: Option[Double] = None
-    val value = noValue match {
-      case Some(v) => v
-      case None => 0.0
-    }
-    value should be(0.0)
-  }
-
-  test("when number exists then some result should be multiplied ?"){
+  test("can I use function map over option to multiply value when it exist ?"){
     val number: Option[Int] = Some(3)
     val result = number.map(_ * 1.5) // return Some object
     result should be (Some(4.5))
   }
 
-  test("when number is none then result should be None ?"){
-    val number: Option[Int] = None
-    val result = number.map(_ * 1.5)
-    result should be(None)
-  }
-
 //  fold extract value from Option
 
-  test("when number exists then result should be multiplied ?"){
+  test("can I use function fold to multiply option value ?"){
     val number: Option[Int] = Some(3)
     val result = number.fold(0)(_ * 3)
     result should be(9)
   }
 
-  test("when number is none then result should be 0 ?"){
+  test("when option should be None then fold function return 0 ?"){
     val number: Option[Int] = None
     val result = number.fold(0)(_ * 3)
     result should be(0)
@@ -93,5 +73,4 @@ class OptionsTest extends FunSuite with Matchers{
   def maybeItWillReturnSomething(flag: Boolean): Option[String] = {
     if (flag) Some("Found value") else None
   }
-
 }
