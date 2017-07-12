@@ -111,5 +111,4 @@ class ListsTests extends FunSuite with Matchers { // https://www.scala-exercises
     b.tail should be (List(3))
     c.tail should be (Nil)
   }
-
 }
