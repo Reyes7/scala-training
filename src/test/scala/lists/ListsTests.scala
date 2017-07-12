@@ -87,6 +87,19 @@ class ListsTests extends FunSuite with Matchers { // https://www.scala-exercises
     listFromRange should be (List(1, 2, 3, 4, 5))
   }
 
+  test("can I prepend elements to list to get new list ?"){
+    val a = List(1, 3, 5, 7)
+    0 :: a should be (List(0, 1, 3, 5, 7))
+  }
+
+  test("can I concatene lists using ::: ?"){
+    val head = List(1, 3)
+    val tail = List(5, 7)
+
+    head ::: tail should be (List(1, 3, 5, 7))
+    head ::: Nil should be (List(1, 3))
+  }
+
   test("can I create list from given tails ?"){
     val d = Nil
     val c = 3 :: d
