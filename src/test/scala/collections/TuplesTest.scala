@@ -1,6 +1,7 @@
-package tuples
+package collections
 
 import java.util.Date
+
 import org.scalatest.{FunSuite, Matchers}
 
 class TuplesTest extends FunSuite with Matchers{

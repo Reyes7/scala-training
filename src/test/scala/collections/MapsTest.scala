@@ -1,4 +1,4 @@
-package maps
+package collections
 
 import java.util.NoSuchElementException
 
@@ -98,4 +98,6 @@ class MapsTest extends FunSuite with Matchers { //https://www.scala-exercises.or
     newMap.contains("OH") should be (false)
     newMap.contains("WI") should be (false)
   }
+
+
 }
