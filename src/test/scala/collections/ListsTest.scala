@@ -2,7 +2,13 @@ package collections
 
 import org.scalatest.{FunSuite, Matchers}
 
-class ListsTests extends FunSuite with Matchers { // https://www.scala-exercises.org/std_lib/lists
+/**
+
+      * https://www.scala-exercises.org/std_lib/lists
+
+*/
+
+class ListsTest extends FunSuite with Matchers {
 
   val list1 = List(1, 2, 3)
   val list2 = List(1, 2, 3)

@@ -4,7 +4,13 @@ import java.util.NoSuchElementException
 
 import org.scalatest.{FunSuite, Matchers}
 
-class MapsTest extends FunSuite with Matchers { //https://www.scala-exercises.org/std_lib/maps
+/**
+
+      * https://www.scala-exercises.org/std_lib/maps
+
+*/
+
+class MapsTest extends FunSuite with Matchers {
 
   val myMap = Map(
     "MI" -> "Michigan",
