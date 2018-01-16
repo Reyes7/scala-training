@@ -11,7 +11,7 @@ class PatternMatchingTests extends FunSuite with Matchers{
       case "red"    => println("RED");    "red"
       case "blue"   => println("BLUE");   2
       case "green"  => println("GREEN");  3
-      case _ ⇒ println(stuff); 0          // case _ represent default option
+      case _ => println(stuff); 0 // case _ represent default option
     }
 
     myStuff should be(2)
@@ -24,7 +24,7 @@ class PatternMatchingTests extends FunSuite with Matchers{
       case "red"    => (255, 0, 0)
       case "green"  => (0, 255, 0)
       case "blue"   => (0, 0, 255)
-      case _ ⇒ println(stuff); 0
+      case _ => println(stuff); 0
     }
 
     myStuff should be(0, 0, 255)
