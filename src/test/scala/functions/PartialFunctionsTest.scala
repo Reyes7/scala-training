@@ -4,10 +4,10 @@ import org.scalatest.{FunSuite, Matchers}
 import partialFunctions.PartialFunctions
 
 /**
-  *
-  * https://www.scala-exercises.org/std_lib/partial_functions
-  *
-  */
+  
+      * https://www.scala-exercises.org/std_lib/partial_functions
+
+*/
 
 class PartialFunctionsTest extends FunSuite with Matchers {
 
