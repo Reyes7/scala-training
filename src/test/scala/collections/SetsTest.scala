@@ -2,6 +2,12 @@ package collections
 
 import org.scalatest.{FunSuite, Matchers}
 
+/**
+
+      * https://www.scala-exercises.org/std_lib/sets
+
+*/
+
 class SetsTest extends FunSuite with Matchers {
 
   val numbers = Set("one", "two", 3, 4, "five", 6, "seven")

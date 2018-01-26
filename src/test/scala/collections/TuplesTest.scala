@@ -4,6 +4,12 @@ import java.util.Date
 
 import org.scalatest.{FunSuite, Matchers}
 
+/**
+
+      * https://www.scala-exercises.org/std_lib/tuples
+
+*/
+
 class TuplesTest extends FunSuite with Matchers{
 
   test("is two tuples the same ?"){
