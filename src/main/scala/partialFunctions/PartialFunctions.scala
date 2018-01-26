@@ -1,12 +1,12 @@
 package partialFunctions
 
 /**
-  *
-  * https://www.scala-exercises.org/std_lib/partial_functions
-  *
-  * isDefinedAt - states that this partial function will take on the task
-  * apply - what we do if this partial function matches
-  */
+
+      * https://www.scala-exercises.org/std_lib/partial_functions
+      *
+      * isDefinedAt - states that this partial function will take on the task
+      * apply - what we do if this partial function matches
+*/
 
 object PartialFunctions {
 

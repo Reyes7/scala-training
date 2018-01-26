@@ -4,7 +4,7 @@ import org.scalatest._
 
 class TestExamples extends FunSuite with Matchers{ // https://www.scala-exercises.org/std_lib/asserts
 
-  test("Is left side equals to right") {
+  test("is left side equals to right") {
     val left = 2
     val right = 1
 
@@ -26,8 +26,8 @@ class TestExamples extends FunSuite with Matchers{ // https://www.scala-exercise
 
   test("is 3 + 2 ~ 3 ?"){
     val result = 3 + 2
-    result should ===(3+-1)     // can customize equality and enforce type constraints
-                                // more information about error
+    result should === (3+-1)     // can customize equality and enforce type constraints
+                                 // more information about error
   }
 
   test("is 1 + 4 = 5 ?"){
