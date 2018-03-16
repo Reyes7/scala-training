@@ -73,7 +73,7 @@ class IterablesTest extends FunSuite with Matchers{
     xs.zipWithIndex should be(List(("Manny", 0), ("Moe", 1), ("Jack", 2)))
   }
 
-  test("Are function sameElements crazy ? :)"){
+  test("are function sameElements crazy ? :)"){
     val xs = List("Manny", "Moe", "Jack")
     val ys = List("Manny", "Moe", "Jack")
     (xs sameElements ys) should be (true)

@@ -2,9 +2,14 @@ package options
 
 import org.scalatest.{FunSuite, Matchers}
 
-//  https://www.scala-exercises.org/std_lib/options
-//  https://www.tutorialspoint.com/scala/scala_options.htm
-//  http://www.scala-lang.org/api/2.12.x/scala/Option.html
+/**
+
+      * https://www.scala-exercises.org/std_lib/options
+
+      * https://www.tutorialspoint.com/scala/scala_options.htm
+      * http://www.scala-lang.org/api/2.12.x/scala/Option.html
+  *
+*/
 
 class OptionsTest extends FunSuite with Matchers{
 
@@ -56,7 +61,9 @@ class OptionsTest extends FunSuite with Matchers{
     result should be (Some(4.5))
   }
 
-//  fold extract value from Option
+  /**
+      * fold extract value from Option
+  */
 
   test("can I use function fold to multiply option value ?"){
     val number: Option[Int] = Some(3)
